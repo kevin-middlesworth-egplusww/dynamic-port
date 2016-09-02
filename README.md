@@ -44,3 +44,5 @@ The `deployment.json` file provides Mizer Sites with port numbers for the differ
 Corresponding to the `type` value listed in the `environments` array, the port will be
 determined based on the current directory of the site. For example, if my site is in
 the "uat" directory, port 3014 will be returned. If the site folder is "dev", 3013 will be returned.
+
+"env/dev" is the default when no match exists (works best for local dev'ing).
