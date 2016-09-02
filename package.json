@@ -1,0 +1,23 @@
+{
+  "name": "dynamic-port",
+  "version": "1.0.3",
+  "description": "Looks in the file system assigns the proper port number to a project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "start": "./start.js",
+    "stop": "./stop.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.designory.com:Mizer-Tools/dynamic-port.git"
+  },
+  "author": "Kevin Middlesworth",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "shelljs": "^0.6.0"
+  }
+}
