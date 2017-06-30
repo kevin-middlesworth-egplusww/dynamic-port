@@ -11,6 +11,12 @@ var shell = require('shelljs');
 
   var pwd = shell.pwd('./');
 
+  // get project env data
+  require('dotenv').config({path: pwd + '/.env'});
+
+  // if a port number is assigned in the project .env, bail and use that
+  if (process.env.PORT) return callback(process.env.PORT);
+
   // get the parent directory name
   var parentDir = pwd.split('/').pop();
 
